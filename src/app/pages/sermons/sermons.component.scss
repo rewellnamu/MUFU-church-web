@@ -1,0 +1,38 @@
+.sermons {
+  padding: 4rem 1rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .sermons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .sermon-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+    .video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+
+      iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #df6060;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-warning {
+  background: #f7c948;
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-warning:hover {
+  background: #e0b020;
+  transform: scale(1.05);
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+/* Page fade-in */
+body {
+  opacity: 0;
+  animation: pageFadeIn 0.8s ease forwards;
+}
+
+@keyframes pageFadeIn {
+  to {
+    opacity: 1;
+  }
+}

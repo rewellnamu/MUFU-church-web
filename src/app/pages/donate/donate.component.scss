@@ -1,0 +1,29 @@
+.donate {
+  padding: 5rem 1rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .donate-btn {
+    background: #f7c948;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #e0b020;
+      transform: scale(1.05);
+    }
+  }
+}

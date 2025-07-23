@@ -1,0 +1,13 @@
+<section class="sermons" data-aos="fade-up">
+  <div class="container">
+    <h2>Latest Sermons</h2>
+    <div class="sermons-grid">
+      <div class="sermon-card" *ngFor="let sermon of sermons">
+        <div class="video">
+          <iframe [src]="sermon.videoUrl | safeUrl" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h4>{{ sermon.title }}</h4>
+      </div>
+    </div>
+  </div>
+</section>

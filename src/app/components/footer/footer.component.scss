@@ -1,0 +1,50 @@
+.footer {
+  background: #222;
+  color: #ddd;
+  padding: 2rem 1rem;
+  text-align: center;
+
+  .footer-top {
+    h3 {
+      color: #f7c948;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .social-links {
+      a {
+        color: #ddd;
+        margin: 0 0.5rem;
+        font-size: 1.3rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #f7c948;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+  }
+}
+.footer {
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

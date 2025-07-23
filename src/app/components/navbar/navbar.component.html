@@ -1,0 +1,17 @@
+<nav class="navbar" data-aos="fade-down">
+  <div class="container">
+    <a routerLink="/" class="logo">ACK MUFU</a>
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <i class="fas" [class.fa-bars]="!isMenuOpen" [class.fa-times]="isMenuOpen"></i>
+    </button>
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a></li>
+      <li><a routerLink="/service" routerLinkActive="active" (click)="closeMenu()">Service</a></li>
+      <li><a routerLink="/sermons" routerLinkActive="active" (click)="closeMenu()">Sermons</a></li>
+      <li><a routerLink="/events" routerLinkActive="active" (click)="closeMenu()">Events</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a></li>
+      <li><a routerLink="/donate" class="donate-btn" (click)="closeMenu()">Donate</a></li>
+    </ul>
+  </div>
+</nav>

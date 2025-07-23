@@ -1,0 +1,109 @@
+.navbar {
+  background: #222;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f7c948;
+    text-decoration: none;
+    border:double 2px #f7c948;
+    padding: 0.5rem 1rem;
+  }
+
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s ease;
+
+    li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &.active, &:hover {
+        color: #f7c948;
+      }
+    }
+
+    .donate-btn {
+      background: #f7c948;
+      color: #222;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: #e0b020;
+      }
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: #333;
+      flex-direction: column;
+      width: 250px;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      pointer-events: none;
+
+      &.active {
+        height: auto;
+        opacity: 1;
+        pointer-events: auto;
+        padding: 1rem;
+      }
+
+      li {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+.navbar {
+  animation: slideDown 0.6s ease;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
